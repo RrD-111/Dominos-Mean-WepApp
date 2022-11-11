@@ -1,0 +1,15 @@
+table {
+  width: 100%;
+}
+
+th.mat-sort-header-sorted {
+  color: black;
+}
+
+body{
+  background-image: url("https://images.moneycontrol.com/static-mcnews/2022/11/Dominos-Pizza-653x435.jpg?impolicy=website&width=1600&height=900");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

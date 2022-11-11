@@ -1,0 +1,16 @@
+<mat-toolbar style="background-color:#1e57d3;">
+  <div class="container custom-toolbar">
+    <span class="Tagline">Welcome to Domino's</span>
+    <span class="example-spacer"></span>
+    <div class="nav-items custom-toolbar">
+      <span *ngFor="let item of navigationItems" [routerLink]="[item.path]" class="mx-2 fw-normal fs-6"
+        style="cursor: pointer; color: aliceblue;"> {{item.title}} </span>
+      <button mat-icon-button class="d-flex" aria-label="Example icon-button with heart icon">
+        <mat-icon [routerLink]="['/user/cart']" style="color: aliceblue;">shopping_cart</mat-icon>
+        <span class="cartItems" *ngIf="cartItems?.length">{{cartItemQuantity}}</span>
+      </button>
+      <button color="warn" mat-raised-button class="ms-4" (click)="logout()">Logout</button>
+
+    </div>
+  </div>
+</mat-toolbar>
